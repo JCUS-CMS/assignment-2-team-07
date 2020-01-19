@@ -1,4 +1,9 @@
-CMS: Assignmnet 2
-Group 007
+# CMS: Assignmnet 2
+# Group 007
+------------------------------------
+Group Members -
 
-# test 01 - testing echo command
+------------------------------------
+
+Test command:
+test 01 - testing echo command
