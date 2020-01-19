@@ -197,8 +197,9 @@ now push the changes from development to staging :<br/>
 git push origin staging
 ```
 
-_**origin** = your remote git repo\<br/\>
-**staging** = your \<branch\> that you want to push to_
+_**origin** = your remote git repo_
+<br/>
+_**staging** = your <branch> that you want to push to_
 
 <br/>
   
