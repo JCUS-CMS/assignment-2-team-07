@@ -17,18 +17,22 @@
 **Setting up VVV in your local machine**
 <br/>
 *run the following commands:*
+
 ```
 git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git
 cd VVV
 vagrant plugin install vagrant-hostsupdater --local
 vagrant up
 ```
-<br/><br/>
+
+<br/>
 **ADDING NEW WP-SITE TO VVV**. 
+<br/>
 go to your VVV directory and look for _'config.yml'_ under VVV/config/. 
 and add the following to your file. 
 <br/>
 ###### new website for cms classroom repo. <br/>
+
 ```
   wordpress-cms:
     skip_provisioning: false
@@ -42,6 +46,7 @@ and add the following to your file.
     hosts:
       - cms.wordpress.local
  ```
+ 
 <br/>
 If you are setting this for first time then it should be added on the line 47 after the two.wordpress.test<br/>
 and then run this command from VVV/ directory:<br/>
@@ -113,8 +118,8 @@ now edit your wp-config.php and change the DB settings to:<br/>
 
 <br/>
   <br/>
+  
 **SETTING UP STAGING ON YOUR LOCAL ENVIRONMENT:**
-
 <br/>
 
 create a new branch and link it with your git remote staging <branch>:<br/>
@@ -136,8 +141,10 @@ git pull
 ```
 
 <br/>
+
 **CHANGING GIT BRANCH IN LOCAL ENVIRONMENT:**
 <br/>
+
 this is the command to shift between branches in your local environment:<br/>
 
 ```
@@ -151,8 +158,10 @@ git checkout development
 ```
 
 <br/>
+
 **EXAMPLE - FOR STAGING**
 <br/>
+
 _For example lets say you have added some new feature to your development branch and now want to update it to staging branch
 Then follow the following command:<br/>
 You have to run the following command from your development branch -_<br/>
