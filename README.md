@@ -26,23 +26,25 @@ vagrant up
 <br/><br/>
 **ADDING NEW WP-SITE TO VVV**. 
 go to your VVV directory and look for _'config.yml'_ under VVV/config/. 
-and add the following to your file.  
-###### new website for cms classroom repo. 
-  wordpress-cms:  
-    skip_provisioning: false. 
-    description: "A standard WP install, useful for building plugins, testing things, etc". 
-    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git. 
-    custom:  
-      # locale: it_IT. 
-      delete_default_plugins: true. 
-      install_plugins:  
-        - query-monitor. 
-    hosts:  
-      - cms.wordpress.local. 
-      <br/>
-If you are setting this for first time then it should be added on the line 47 after the two.wordpress.test. 
+and add the following to your file. 
 <br/>
-and then run this command from VVV/ directory:  
+###### new website for cms classroom repo. <br/>
+```
+  wordpress-cms:
+    skip_provisioning: false
+    description: "A standard WP install, useful for building plugins, testing things, etc"
+    repo: https://github.com/Varying-Vagrant-Vagrants/custom-site-template.git
+    custom:
+      # locale: it_IT
+      delete_default_plugins: true
+      install_plugins:
+        - query-monitor
+    hosts:
+      - cms.wordpress.local
+ ```
+<br/>
+If you are setting this for first time then it should be added on the line 47 after the two.wordpress.test<br/>
+and then run this command from VVV/ directory:<br/>
 ```
 vagrant reload --provision
 ```
