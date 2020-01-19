@@ -17,10 +17,12 @@
 **Setting up VVV in your local machine**
 
 *run the following commands:*
-`git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git`
-`cd VVV`
-`vagrant plugin install vagrant-hostsupdater --local`
-`vagrant up`
+```
+git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git
+cd VVV
+vagrant plugin install vagrant-hostsupdater --local
+vagrant up
+```
 
 **ADDING NEW WP-SITE TO VVV**
 go to your VVV directory and look for _'config.yml'_ under VVV/config/
