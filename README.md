@@ -49,7 +49,7 @@ and then run this command from VVV/ directory:<br/>
 ```
 vagrant reload --provision
 ```
-<br/><br/>
+<br/>
 **Setting up GITHUB in your new website/public_html**. 
 <br/>
 Assuming you are already in your VVV directory<br/>
@@ -57,54 +57,53 @@ Assuming you are already in your VVV directory<br/>
 cd www/wordpress-cms/
 ```
 
-<br/>
 now we make a copy of your public_html/wp-config.php<br/>
 ```
 cp public_html/wp-config.php wp-config.php
 ```
-<br/>
+
 then we delete the public_html and create a new directory with same name<br/>
 ```
 rm -rf public_html && mkdir public_html
 ```
-<br/>
+
 then cd inside public_html<br/>
 ```
 cd public_html
 ```
-<br/>
+
 Setup git in your directory<br/>
 ```
 git init
 ```
-<br/>
+
 Create a new branch for easier push and pull<br/>
 ```
 git checkout -b development
 ```
-<br/>
+
 Link your local git with the remote<br/>
 ```
 git remote add origin https://github.com/JCUS-CMS/assignment-2-team-07.git
 ```
-<br/>
+
 now setup upstream<br/>
 ```
 git branch --set-upstream-to=origin/development development
 ```
-<br/>
+
 not pull from the remote branch<br/>
 ```
 git pull
 ```
-<br/>
+
 now copy the wp-config.php file back to your public_html<br/>
 ```
 cp ../wp-config.php wp-config.php
 ```
-<br/>
+
 now edit your wp-config.php and change the DB settings to:<br/>
-<br/>
+
 ```
   define( 'DB_NAME', '<YOUR DB_NAME>' );  
   define( 'DB_USER', '<YOUR DB_USERNAME>' );  
@@ -118,33 +117,40 @@ now edit your wp-config.php and change the DB settings to:<br/>
 
 <br/>
 
-create a new branch and link it with your git remote staging <branch>:
+create a new branch and link it with your git remote staging <branch>:<br/>
   
-`git checkout -b staging`
-  <br/>
-now for easy pull and push upstream it to your origin/<branch>=staging.
+```
+git checkout -b staging
+```
+
+now for easy pull and push upstream it to your origin/<branch>=staging.<br/>
   
 ```
 git branch --set-upstream-to=origin/staging staging
 ```
-  <br/>
-now pull the latest staging branch commits:  
+
+now pull the latest staging branch commits:<br/>
+
 ```
 git pull
 ```
-  <br/><br/>
+
+<br/>
 **CHANGING GIT BRANCH IN LOCAL ENVIRONMENT:**
 <br/>
 this is the command to shift between branches in your local environment:<br/>
+
 ```
 git checkout <branch-name>
 ```
-<br/>
+
 for example if you are in staging branch and want to shift to development branch:<br/>
+
 ```
 git checkout development
 ```
-<br/><br/>
+
+<br/>
 **EXAMPLE - FOR STAGING**
 <br/>
 _For example lets say you have added some new feature to your development branch and now want to update it to staging branch
@@ -152,19 +158,23 @@ Then follow the following command:<br/>
 You have to run the following command from your development branch -_<br/>
 <br/>
 Add the changed files to your git:
+
 ```
 git add .
 ```
-<br/>
-now commit the changes you have made:
+
+now commit the changes you have made:<br/>
+
 ```
 git commit -m "<your-commit-message>"
 ```
-<br/>
+
 now push the changes from development to staging :<br/>
+
 ```
 git push origin staging
 ```
+
 _**origin =** your remote git repo<br/>
 **staging =** your <branch> that you want to push to_<br/>
   <br/>
