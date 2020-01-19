@@ -45,6 +45,7 @@ and add the following to your file.
 <br/>
 If you are setting this for first time then it should be added on the line 47 after the two.wordpress.test<br/>
 and then run this command from VVV/ directory:<br/>
+
 ```
 vagrant reload --provision
 ```
