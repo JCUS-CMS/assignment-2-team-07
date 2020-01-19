@@ -26,12 +26,19 @@ vagrant up
 ```
 
 <br/>
-**ADDING NEW WP-SITE TO VVV**. 
+
+**ADDING NEW WP-SITE TO VVV**
+
 <br/>
+
 go to your VVV directory and look for _'config.yml'_ under VVV/config/. 
-and add the following to your file. 
+and add the following to your file
+
 <br/>
-###### new website for cms classroom repo. <br/>
+
+###### new website for cms classroom repo
+
+<br/>
 
 ```
   wordpress-cms:
@@ -48,15 +55,19 @@ and add the following to your file.
  ```
  
 <br/>
+
 If you are setting this for first time then it should be added on the line 47 after the two.wordpress.test<br/>
 and then run this command from VVV/ directory:<br/>
-
 ```
 vagrant reload --provision
 ```
+
 <br/>
-**Setting up GITHUB in your new website/public_html**. 
+
+**Setting up GITHUB in your new website/public_html**
+
 <br/>
+
 Assuming you are already in your VVV directory<br/>
 ```
 cd www/wordpress-cms/
@@ -117,9 +128,9 @@ now edit your wp-config.php and change the DB settings to:<br/>
 ```
 
 <br/>
-  <br/>
   
 **SETTING UP STAGING ON YOUR LOCAL ENVIRONMENT:**
+
 <br/>
 
 create a new branch and link it with your git remote staging <branch>:<br/>
@@ -143,6 +154,7 @@ git pull
 <br/>
 
 **CHANGING GIT BRANCH IN LOCAL ENVIRONMENT:**
+
 <br/>
 
 this is the command to shift between branches in your local environment:<br/>
@@ -160,6 +172,7 @@ git checkout development
 <br/>
 
 **EXAMPLE - FOR STAGING**
+
 <br/>
 
 _For example lets say you have added some new feature to your development branch and now want to update it to staging branch
@@ -184,12 +197,17 @@ now push the changes from development to staging :<br/>
 git push origin staging
 ```
 
-_**origin =** your remote git repo<br/>
-**staging =** your <branch> that you want to push to_<br/>
-  <br/>
+_**origin** = your remote git repo\<br/\>
+**staging** = your \<branch\> that you want to push to_
+
+<br/>
+  
 now check out the staging URL for changes:<br/>
+
 http://staging.cms-a2.ayushmank.sgedu.site/group-007/<br/>
+
 ------------------------------------
+
 <br/>
   
 #### Test command:
