@@ -108,7 +108,7 @@ now setup upstream<br/>
 git branch --set-upstream-to=origin/development development
 ```
 
-not pull from the remote branch<br/>
+now pull from the remote branch<br/>
 ```
 git pull
 ```
