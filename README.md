@@ -14,3 +14,4 @@ Group Members -
 Test command:
 test 01 - testing echo command
 test 02 - setting up branches in local
+test 03 - adding all the users to DB
