@@ -52,62 +52,66 @@ vagrant reload --provision
 <br/><br/>
 **Setting up GITHUB in your new website/public_html**. 
 <br/>
-Assuming you are already in your VVV directory
+Assuming you are already in your VVV directory<br/>
 ```
 cd www/wordpress-cms/
 ```
+
 <br/>
-now we make a copy of your public_html/wp-config.php. 
+now we make a copy of your public_html/wp-config.php<br/>
 ```
 cp public_html/wp-config.php wp-config.php
 ```
 <br/>
-then we delete the public_html and create a new directory with same name. 
+then we delete the public_html and create a new directory with same name<br/>
 ```
 rm -rf public_html && mkdir public_html
 ```
 <br/>
-then cd inside public_html. 
+then cd inside public_html<br/>
 ```
 cd public_html
 ```
 <br/>
-Setup git in your directory. 
+Setup git in your directory<br/>
 ```
 git init
 ```
 <br/>
-Create a new branch for easier push and pull. 
+Create a new branch for easier push and pull<br/>
 ```
 git checkout -b development
 ```
 <br/>
-Link your local git with the remote. 
+Link your local git with the remote<br/>
 ```
 git remote add origin https://github.com/JCUS-CMS/assignment-2-team-07.git
 ```
 <br/>
-now setup upstream. 
+now setup upstream<br/>
 ```
 git branch --set-upstream-to=origin/development development
 ```
 <br/>
-not pull from the remote branch. 
+not pull from the remote branch<br/>
 ```
 git pull
 ```
 <br/>
-now copy the wp-config.php file back to your public_html. 
+now copy the wp-config.php file back to your public_html<br/>
 ```
 cp ../wp-config.php wp-config.php
 ```
 <br/>
-now edit your wp-config.php and change the DB settings to:  
+now edit your wp-config.php and change the DB settings to:<br/>
 <br/>
+```
   define( 'DB_NAME', '<YOUR DB_NAME>' );  
   define( 'DB_USER', '<YOUR DB_USERNAME>' );  
   define( 'DB_PASSWORD', '<YOUR DB_PASSWORD>' );  
   define( 'DB_HOST', '<YOUR DB_SERVER IP>' );  
+```
+
 <br/>
   <br/>
 **SETTING UP STAGING ON YOUR LOCAL ENVIRONMENT:**
