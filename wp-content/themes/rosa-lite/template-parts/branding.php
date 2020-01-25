@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ){
 		/*
 		 * If the logo alt attribute is empty, get the site title and explicitly
 		 * pass it to the attributes used by wp_get_attachment_image().
+		 *   class="site-logo-img--light custom-logo"
 		 */
 		$image_alt = get_post_meta( $custom_logo_id, '_wp_attachment_image_alt', true );
 		if ( empty( $image_alt ) ) {
@@ -22,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ){
 		} ?>
 		<div class="site-title site-title--image">
 			<a class="site-logo  site-logo--image custom-logo-link" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home">
-				<img class="site-logo-img--light custom-logo" src="<?php echo esc_url( wp_get_attachment_image_url( $custom_logo_id, 'full' ) ); ?>" rel="logo" alt="<?php echo esc_attr( $image_alt ); ?>"/>
+				<img src="<?php echo esc_url( wp_get_attachment_image_url( $custom_logo_id, 'full' ) ); ?>" rel="logo" alt="<?php echo esc_attr( $image_alt ); ?>"/>
 				<?php
 				$inverted_logo_id = pixelgrade_option( 'main_logo_dark', false );
 				if ( $inverted_logo_id ) {
