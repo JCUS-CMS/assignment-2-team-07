@@ -215,3 +215,4 @@ http://staging.cms-a2.ayushmank.sgedu.site/group-007/<br/>
 test 01 - testing echo command<br/>
 test 02 - setting up branches in local<br/>
 test 03 - adding all the users to DB<br/>
+test 04 - staging v2.0  
